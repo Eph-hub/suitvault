@@ -1,0 +1,15 @@
+{
+  "name": "Suit Vault ZM",
+  "short_name": "SuitVault",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FEFCF5",
+  "theme_color": "#0A1927",
+  "icons": [
+    {
+      "src": "favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
