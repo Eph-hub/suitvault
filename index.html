@@ -4,6 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Suit Vault | Premium Suits – Zambia</title>
+  <!-- Favicon (simple M emblem) -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👔</text></svg>" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
   <style>
@@ -16,6 +18,7 @@
     }
     .container { max-width: 1240px; margin: 0 auto; padding: 0 24px; }
 
+    /* ----- HEADER ----- */
     header {
       background: #fff;
       box-shadow: 0 2px 12px rgba(0,0,0,0.04);
@@ -97,6 +100,7 @@
       .hamburger { display: block; }
     }
 
+    /* ----- BUTTONS ----- */
     .btn-gold {
       background: #c5a059;
       color: #0a1927;
@@ -130,7 +134,25 @@
       background: #c5a059;
       color: #fff;
     }
+    .btn-whatsapp {
+      background: #25D366;
+      color: #fff;
+      border: none;
+      padding: 12px 32px;
+      border-radius: 40px;
+      font-weight: 600;
+      cursor: pointer;
+      font-size: 1rem;
+      display: inline-block;
+      text-decoration: none;
+      transition: 0.2s;
+    }
+    .btn-whatsapp:hover {
+      background: #1da85e;
+      transform: scale(1.02);
+    }
 
+    /* ----- HERO ----- */
     .hero {
       padding: 70px 0 60px;
       background: linear-gradient(145deg, #f7f3ec 0%, #efe8dd 100%);
@@ -167,6 +189,7 @@
       .hero-content h1 { font-size: 2.4rem; }
     }
 
+    /* ----- VIDEO ----- */
     .video-section {
       padding: 50px 0 60px;
       background: #fff;
@@ -178,6 +201,7 @@
       overflow: hidden;
       box-shadow: 0 12px 36px rgba(0,0,0,0.07);
     }
+    .video-wrapper video,
     .video-wrapper iframe {
       width: 100%;
       aspect-ratio: 16 / 9;
@@ -185,6 +209,7 @@
       display: block;
     }
 
+    /* ----- PRODUCTS ----- */
     .products {
       padding: 70px 0;
       background: #fbf9f5;
@@ -208,6 +233,10 @@
       height: 3px;
       background: #c5a059;
       border-radius: 4px;
+    }
+    .section-title p {
+      margin-top: 12px;
+      color: #555;
     }
     .product-grid {
       display: grid;
@@ -271,6 +300,111 @@
       transform: scale(1.02);
     }
 
+    /* ----- QUOTATION SECTION (NEW) ----- */
+    .quote-section {
+      padding: 80px 0;
+      background: #fff;
+    }
+    .quote-grid {
+      display: flex;
+      gap: 4rem;
+      align-items: flex-start;
+      flex-wrap: wrap;
+    }
+    .quote-info {
+      flex: 1;
+      min-width: 280px;
+    }
+    .quote-info h2 {
+      font-size: 2.2rem;
+      margin-bottom: 1rem;
+    }
+    .quote-info h2:after {
+      content: '';
+      display: block;
+      width: 70px;
+      height: 3px;
+      background: #c5a059;
+      margin-top: 8px;
+      border-radius: 4px;
+    }
+    .quote-info p {
+      color: #555;
+      font-size: 1.05rem;
+      line-height: 1.7;
+      margin: 1rem 0;
+    }
+    .quote-info .highlight {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin: 0.7rem 0;
+      font-size: 0.95rem;
+    }
+    .quote-info .highlight i {
+      width: 28px;
+      color: #c5a059;
+      font-size: 1.2rem;
+    }
+    .quote-form-wrapper {
+      flex: 1.5;
+      min-width: 320px;
+      background: #fbf9f5;
+      padding: 2.5rem;
+      border-radius: 28px;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.05);
+      border: 1px solid rgba(197,160,89,0.15);
+    }
+    .quote-form-wrapper h3 {
+      font-size: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+    .form-group {
+      margin-bottom: 1.2rem;
+    }
+    .form-group label {
+      display: block;
+      font-weight: 600;
+      font-size: 0.9rem;
+      margin-bottom: 5px;
+      color: #1c1c1c;
+    }
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      width: 100%;
+      padding: 14px 18px;
+      border: 1px solid #ddd6cc;
+      border-radius: 12px;
+      font-family: 'Inter', sans-serif;
+      font-size: 1rem;
+      background: #fff;
+      transition: 0.2s;
+    }
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+      outline: none;
+      border-color: #c5a059;
+      box-shadow: 0 0 0 3px rgba(197,160,89,0.15);
+    }
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+    }
+    @media (max-width: 600px) {
+      .form-row {
+        grid-template-columns: 1fr;
+      }
+    }
+    .submit-status {
+      margin-top: 1rem;
+      font-weight: 600;
+      text-align: center;
+    }
+
+    /* ----- WHATSAPP FLOAT ----- */
     .whatsapp-float {
       position: fixed;
       bottom: 28px;
@@ -294,6 +428,7 @@
       box-shadow: 0 8px 28px rgba(37, 211, 102, 0.45);
     }
 
+    /* ----- FOOTER ----- */
     footer {
       background: #0a1927;
       color: #cfd8d1;
@@ -323,12 +458,11 @@
 </head>
 <body>
 
-<!-- header -->
+<!-- HEADER -->
 <header>
   <div class="container">
     <div class="navbar">
       <div class="logo-area">
-        <!-- ===== FIXED: NO SPACE IN FILENAME ===== -->
         <img src="suitvault-logo.png" alt="Suit Vault Logo" />
         <div class="logo-text">
           <div class="brand">SUIT <span>VAULT ZM</span></div>
@@ -340,13 +474,14 @@
         <li><a href="#home">Home</a></li>
         <li><a href="#products">Suits</a></li>
         <li><a href="#video">Ad</a></li>
+        <li><a href="#quote">Get Quote</a></li> <!-- NEW -->
         <li><a href="#contact">Contact</a></li>
       </ul>
     </div>
   </div>
 </header>
 
-<!-- hero -->
+<!-- HERO -->
 <section id="home" class="hero">
   <div class="container hero-grid">
     <div class="hero-content">
@@ -354,7 +489,7 @@
       <p>Men · Women · Kids — tailored perfection. From Lusaka to Livingstone, we bring elegance to your doorstep.</p>
       <div>
         <a href="#products" class="btn-gold"><i class="fas fa-tshirt"></i> Shop Now</a>
-        <a href="#contact" class="btn-outline" style="margin-left: 12px;">Get a Quote</a>
+        <a href="#quote" class="btn-outline" style="margin-left: 12px;">Get a Quote</a> <!-- Updated link -->
       </div>
     </div>
     <div class="hero-image">
@@ -363,34 +498,137 @@
   </div>
 </section>
 
-<!-- video advertisement -->
+<!-- VIDEO -->
 <section id="video" class="video-section">
   <div class="container">
     <div class="section-title">
       <h2>See the Collection</h2>
-      <p style="margin-top: 8px; color: #555;">Watch our latest ad</p>
+      <p>Watch our latest ad</p>
     </div>
     <div class="video-wrapper">
-      <iframe src="Suitvidad.mp4" allowfullscreen loading="lazy"></iframe>
+      <!-- Using <video> tag for local MP4 (falls back to iframe if needed) -->
+      <video controls autoplay muted loop playsinline>
+        <source src="Suitvidad.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
     </div>
   </div>
 </section>
 
-<!-- products -->
+<!-- PRODUCTS -->
 <section id="products" class="products">
   <div class="container">
     <div class="section-title">
       <h2>Our Signature Suits</h2>
-      <p style="margin-top: 8px; color: #555;">Order directly via WhatsApp – we'll confirm your size and delivery</p>
+      <p>Order directly via WhatsApp – we'll confirm your size and delivery</p>
     </div>
     <div class="product-grid" id="productGrid">
-      <!-- products injected by JS -->
+      <!-- injected by JS -->
     </div>
   </div>
 </section>
 
-<!-- contact / quote -->
-<section id="contact" style="padding: 60px 0; background: #fff;">
+<!-- ========================================== -->
+<!-- NEW QUOTATION SECTION                      -->
+<!-- ========================================== -->
+<section id="quote" class="quote-section">
+  <div class="container">
+    <div class="quote-grid">
+      <!-- Left info -->
+      <div class="quote-info">
+        <h2>Request a Tailored Quote</h2>
+        <p>
+          Tell us your style, size, and occasion. Whether it's a wedding, corporate event, or a custom family set —
+          we'll send you a professional quote with pricing and delivery timelines within 24 hours.
+        </p>
+        <div class="highlight"><i class="fas fa-map-marker-alt"></i> <strong>Zambia-wide delivery</strong></div>
+        <div class="highlight"><i class="fas fa-tshirt"></i> <strong>Men · Women · Kids</strong></div>
+        <div class="highlight"><i class="fab fa-whatsapp" style="color:#25D366;"></i> <strong>Instant chat support</strong></div>
+        <a href="https://wa.me/260971169824?text=Hello%20Suit%20Vault!%20I%20need%20a%20quotation%20for%20a%20suit." target="_blank" class="btn-whatsapp" style="margin-top: 1.5rem;">
+          <i class="fab fa-whatsapp"></i> Or chat on WhatsApp
+        </a>
+      </div>
+
+      <!-- Right form -->
+      <div class="quote-form-wrapper">
+        <h3>Fill in your details</h3>
+        <form id="quoteForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="fullName">Full Name *</label>
+              <input type="text" id="fullName" placeholder="e.g. John Banda" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address *</label>
+              <input type="email" id="email" placeholder="john@example.com" required />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="phone">Phone Number (WhatsApp)</label>
+              <input type="tel" id="phone" placeholder="e.g. 0971234567" />
+            </div>
+            <div class="form-group">
+              <label for="location">Delivery Location *</label>
+              <select id="location" required>
+                <option value="">Select your city/town</option>
+                <option value="Lusaka">Lusaka</option>
+                <option value="Kitwe">Kitwe</option>
+                <option value="Ndola">Ndola</option>
+                <option value="Livingstone">Livingstone</option>
+                <option value="Chipata">Chipata</option>
+                <option value="Kabwe">Kabwe</option>
+                <option value="Mufulira">Mufulira</option>
+                <option value="Solwezi">Solwezi</option>
+                <option value="Kasama">Kasama</option>
+                <option value="Mongu">Mongu</option>
+                <option value="Other">Other (specify in notes)</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="suitType">Suit Type *</label>
+              <select id="suitType" required>
+                <option value="">Select suit type</option>
+                <option value="Men's Suit">Men's Suit</option>
+                <option value="Women's Suit / Blazer">Women's Suit / Blazer</option>
+                <option value="Kids Suit">Kids Suit</option>
+                <option value="Family Matching Set">Family Matching Set</option>
+                <option value="Custom Tailored">Custom Tailored</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="occasion">Occasion</label>
+              <select id="occasion">
+                <option value="Wedding">Wedding</option>
+                <option value="Business / Office">Business / Office</option>
+                <option value="Gala / Formal Event">Gala / Formal Event</option>
+                <option value="Casual / Smart Casual">Casual / Smart Casual</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Additional Details (Size, Colour, Fabric preference, etc.)</label>
+            <textarea id="message" rows="4" placeholder="Tell us your chest size, height, preferred colour, or any special requests..."></textarea>
+          </div>
+
+          <button type="submit" class="btn-gold" style="width: 100%; padding: 14px; font-size: 1.1rem;">
+            <i class="fas fa-paper-plane"></i> Request Quote Now
+          </button>
+          <div id="formStatus" class="submit-status"></div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT (Simplified) -->
+<section id="contact" style="padding: 60px 0; background: #fff; border-top: 1px solid #eee;">
   <div class="container" style="max-width: 700px; text-align: center;">
     <h2 style="font-size: 2rem; margin-bottom: 0.5rem;">Need a custom fit?</h2>
     <p style="color: #555; margin-bottom: 2rem;">Tell us your style, occasion, and location – we'll tailor and deliver.</p>
@@ -400,7 +638,7 @@
   </div>
 </section>
 
-<!-- footer -->
+<!-- FOOTER -->
 <footer>
   <div class="container">
     <div class="footer-grid">
@@ -412,11 +650,11 @@
         <h4>Quick links</h4>
         <p><a href="#home">Home</a></p>
         <p><a href="#products">Suits</a></p>
-        <p><a href="#video">Ad</a></p>
+        <p><a href="#quote">Get Quote</a></p>
       </div>
       <div>
         <h4>Showroom</h4>
-        <p>We are mobile and ready to deliver anywhere across Zambia, Lusaka</p>
+        <p>Roma, Lusaka</p>
         <p>+260971169824</p>
       </div>
     </div>
@@ -424,13 +662,14 @@
   </div>
 </footer>
 
-<!-- floating WhatsApp -->
+<!-- FLOATING WHATSAPP -->
 <a href="https://wa.me/260971169824?text=Hi%20Suit%20Vault!%20I%20have%20a%20question%20about%20your%20suits." target="_blank" class="whatsapp-float" aria-label="Chat on WhatsApp">
   <i class="fab fa-whatsapp"></i>
 </a>
 
+<!-- JAVASCRIPT -->
 <script>
-  // Product data
+  // ----- 1. PRODUCTS (YOUR DATA) -----
   const products = [
     { name: "Executive Navy Suit", price: "ZMW 999", img: "suitadnavy.png", desc: "Classic two‑piece, breathable wool" },
     { name: "Dark Slim Fit", price: "ZMW 999", img: "suitad3.png", desc: "Modern sharp cut for executives" },
@@ -456,11 +695,55 @@
     grid.appendChild(card);
   });
 
-  // Mobile menu toggle
+  // ----- 2. MOBILE MENU -----
   const hamburger = document.getElementById('hamburger');
   const navLinks = document.getElementById('navLinks');
   hamburger.addEventListener('click', () => navLinks.classList.toggle('active'));
   document.querySelectorAll('.nav-links a').forEach(link => link.addEventListener('click', () => navLinks.classList.remove('active')));
+
+  // ----- 3. QUOTE FORM (Formspree) -----
+  const form = document.getElementById('quoteForm');
+  const statusDiv = document.getElementById('formStatus');
+
+  // ⚠️ REPLACE 'YOUR_FORM_ID_HERE' with your actual Formspree form ID
+  const FORMSPREE_ENDPOINT = 'https://formspree.io/f/YOUR_FORM_ID_HERE';
+
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    statusDiv.innerHTML = '<span style="color: #c5a059;">⏳ Sending your quotation request...</span>';
+    statusDiv.style.color = '#c5a059';
+
+    const data = {
+      name: document.getElementById('fullName').value.trim(),
+      email: document.getElementById('email').value.trim(),
+      phone: document.getElementById('phone').value.trim(),
+      location: document.getElementById('location').value,
+      suitType: document.getElementById('suitType').value,
+      occasion: document.getElementById('occasion').value,
+      message: document.getElementById('message').value.trim()
+    };
+
+    try {
+      const response = await fetch(FORMSPREE_ENDPOINT, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data)
+      });
+
+      if (response.ok) {
+        statusDiv.innerHTML = '✅ <strong>Quote requested successfully!</strong> We\'ll get back to you within 24 hours.';
+        statusDiv.style.color = '#2c6e2f';
+        form.reset();
+        setTimeout(() => { statusDiv.innerHTML = ''; }, 6000);
+      } else {
+        throw new Error('Server error');
+      }
+    } catch (error) {
+      statusDiv.innerHTML = '❌ Oops! Something went wrong. Please try again or contact us on WhatsApp.';
+      statusDiv.style.color = '#b45f2b';
+      console.error('Form error:', error);
+    }
+  });
 </script>
 </body>
 </html>
