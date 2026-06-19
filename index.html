@@ -16,7 +16,6 @@
     }
     .container { max-width: 1240px; margin: 0 auto; padding: 0 24px; }
 
-    /* ----- header ----- */
     header {
       background: #fff;
       box-shadow: 0 2px 12px rgba(0,0,0,0.04);
@@ -39,9 +38,10 @@
       gap: 14px;
     }
     .logo-area img {
-      height: 50px;
+      height: 52px;
       width: auto;
       border-radius: 8px;
+      object-fit: contain;
     }
     .logo-text {
       line-height: 1.2;
@@ -97,7 +97,6 @@
       .hamburger { display: block; }
     }
 
-    /* buttons */
     .btn-gold {
       background: #c5a059;
       color: #0a1927;
@@ -132,7 +131,6 @@
       color: #fff;
     }
 
-    /* hero */
     .hero {
       padding: 70px 0 60px;
       background: linear-gradient(145deg, #f7f3ec 0%, #efe8dd 100%);
@@ -169,7 +167,6 @@
       .hero-content h1 { font-size: 2.4rem; }
     }
 
-    /* video section */
     .video-section {
       padding: 50px 0 60px;
       background: #fff;
@@ -188,7 +185,6 @@
       display: block;
     }
 
-    /* products */
     .products {
       padding: 70px 0;
       background: #fbf9f5;
@@ -275,7 +271,6 @@
       transform: scale(1.02);
     }
 
-    /* WhatsApp floating button */
     .whatsapp-float {
       position: fixed;
       bottom: 28px;
@@ -299,7 +294,6 @@
       box-shadow: 0 8px 28px rgba(37, 211, 102, 0.45);
     }
 
-    /* footer */
     footer {
       background: #0a1927;
       color: #cfd8d1;
@@ -334,8 +328,8 @@
   <div class="container">
     <div class="navbar">
       <div class="logo-area">
-        <!-- ===== REPLACE src WITH YOUR LOGO IMAGE URL ===== -->
-        <img src="https://via.placeholder.com/60x60/C5A059/FFFFFF?text=M" alt="Suit Vault Logo" />
+        <!-- ===== YOUR LOGO IMAGE ===== -->
+        <img src="suitvault logo.png" alt="Suit Vault Logo" />
         <div class="logo-text">
           <div class="brand">SUIT <span>VAULT ZM</span></div>
           <div class="tagline">DRESS LIKE A BOSS</div>
@@ -377,7 +371,7 @@
       <p style="margin-top: 8px; color: #555;">Watch our latest ad</p>
     </div>
     <div class="video-wrapper">
-      <!-- ===== REPLACE src WITH YOUR VIDEO URL (YouTube, Vimeo, etc.) ===== -->
+      <!-- ===== REPLACE WITH YOUR VIDEO URL ===== -->
       <iframe src="https://www.youtube.com/embed/7e90gBu4RzM?rel=0&autoplay=0" allowfullscreen loading="lazy"></iframe>
     </div>
   </div>
@@ -388,7 +382,7 @@
   <div class="container">
     <div class="section-title">
       <h2>Our Signature Suits</h2>
-      <p style="margin-top: 8px; color: #555;">Order directly via WhatsApp – we’ll confirm your size and delivery</p>
+      <p style="margin-top: 8px; color: #555;">Order directly via WhatsApp – we'll confirm your size and delivery</p>
     </div>
     <div class="product-grid" id="productGrid">
       <!-- products injected by JS -->
@@ -400,7 +394,7 @@
 <section id="contact" style="padding: 60px 0; background: #fff;">
   <div class="container" style="max-width: 700px; text-align: center;">
     <h2 style="font-size: 2rem; margin-bottom: 0.5rem;">Need a custom fit?</h2>
-    <p style="color: #555; margin-bottom: 2rem;">Tell us your style, occasion, and location – we’ll tailor and deliver.</p>
+    <p style="color: #555; margin-bottom: 2rem;">Tell us your style, occasion, and location – we'll tailor and deliver.</p>
     <a href="https://wa.me/260761234567?text=Hello%20Suit%20Vault!%20I'd%20like%20to%20inquire%20about%20a%20custom%20suit%20delivery%20in%20Zambia." target="_blank" class="btn-gold" style="padding: 14px 48px; font-size: 1.1rem;">
       <i class="fab fa-whatsapp"></i> Inquire on WhatsApp
     </a>
